@@ -20,7 +20,7 @@ describe('Register new member -> Register new Influencer -> Write as a member to
   });
   it('1.2 Using default password "Vibe123!"', async () => {
     const password = await getTextFieldElements('signup-field-password');
-    await password.input.setValue('Vibe123!');
+    await password.input.setValue('----!');
   });
   it('1.3 Ticking "T&C" and creating member account', async () => {
     const box = await getTextFieldElements('signup-checkbox-accept');
