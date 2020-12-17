@@ -10,7 +10,7 @@ const rand = getRandom();
 describe('Register new member -> Register new Influencer -> Write as a member to Influencer', () => {
   it('1.0 Random member username', async () => {
     // await browser.url('http://localhost:3001/signup');
-    await browser.url('https://ui-dev.vibetech.org/signup');
+    await browser.url('https://-----/signup');
     const username = await getTextFieldElements('signup-field-username');
     await username.input.setValue(rand + '_test');
   });
