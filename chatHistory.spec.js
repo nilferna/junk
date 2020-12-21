@@ -52,9 +52,9 @@ describe('Register new member -> Register new Influencer -> Write as a member to
     const email = await getTextFieldElements('signup-field-email');
     await email.input.setValue(rand + '@influencer.mail');
   });
-  it('2.3 Using "Vibe123!"as influencer password', async () => {
+  it('2.3 Using "V***123!"as influencer password', async () => {
     const password = await getTextFieldElements('signup-field-password');
-    await password.input.setValue('Vibe123!');
+    await password.input.setValue('V**123!');
   });
   it('2.4 Ticking "T&C" and creating influencer account', async () => {
     const box = await getTextFieldElements('signup-checkbox-accept');
@@ -80,14 +80,14 @@ describe('Register new member -> Register new Influencer -> Write as a member to
     const usernameSignin = await getTextFieldElements('signin-field-username');
     await usernameSignin.input.setValue(rand + '_test');
     const passwordSignin = await getTextFieldElements('signin-field-password');
-    await passwordSignin.input.setValue('vibe');
+    await passwordSignin.input.setValue('***');
     const submitButtonSignin = await $('[data-test-id="signin-button-submit"]');
     submitButtonSignin.waitForExist(t);
     await submitButtonSignin.click();
   });
   it('3.1 going to influencer profile page', async () => {
     // await browser.url('http://localhost:3001/profile/' + rand + '_test_inf');
-    await browser.url('https://ui-dev.vibetech.org/profile/' + rand + '_test_inf');
+    await browser.url('https://ui-dev.***.org/profile/' + rand + '_test_inf');
   });
   it('3.2 Clicking DM on influencer profile page', async () => {
     const startChatButton = await $('[data-test-id="directMessage"]');
