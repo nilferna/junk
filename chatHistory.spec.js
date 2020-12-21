@@ -18,7 +18,7 @@ describe('Register new member -> Register new Influencer -> Write as a member to
     const email = await getTextFieldElements('signup-field-email');
     await email.input.setValue(rand + '@member.mail');
   });
-  it('1.2 Using default password "Vibe123!"', async () => {
+  it('1.2 Using default password "V**123!"', async () => {
     const password = await getTextFieldElements('signup-field-password');
     await password.input.setValue('----!');
   });
