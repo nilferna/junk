@@ -8,7 +8,7 @@ await page.goto(E.olybeteu.accessUrl, {
     
     // waitUntil: "networkidle"
   });
-  // await page.waitForLoadState('networkidle');
+  await page.waitForLoadState('networkidle');
   await page.setViewportSize({ width: 1920, height: 2080 });
   await page.locator(E.olybeteu.declineNotifications).click();
   await page.waitForTimeout(1000);
