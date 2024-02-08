@@ -1,0 +1,1 @@
+for i in {1..1000}; do npx playwright test vaixTest/autotest/tests/interdan.spec.ts; done
